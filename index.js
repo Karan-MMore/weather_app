@@ -20,7 +20,6 @@ const options = {
 fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${cityName}&days=1`, options)
 	.then(response => response.json())
 	.then(response =>{
-		console.log(response)
 			document.querySelector('.city').innerHTML=response.location.name;
 			document.querySelector(".region").innerHTML=response.location.region
 			document.querySelector('.temp').innerHTML=response.current.temp_c+"°C ";
