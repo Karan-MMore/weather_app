@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Libre+Franklin:wght@300;500;700;800;900&family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;900&family=Open+Sans:wght@300;400;500;700;800&family=Poppins:wght@300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@300;400;500;700;800;900&display=swap');
+
+
+.fontItim{font-family: 'Itim', cursive;}
+.LibreFranklin{font-family: 'Libre Franklin', sans-serif;}
+.Merriweather{font-family: 'Merriweather', serif;}
+.Montserrat{font-family: 'Montserrat', sans-serif;}
+.OpenSans{font-family: 'Open Sans', sans-serif;}
+.Poppins{font-family: 'Poppins', sans-serif;}
+.Roboto{font-family: 'Roboto', sans-serif;}
+.WorkSans{font-family: 'Work Sans', sans-serif;}
+
 *{
     margin: 0%;
     padding: 0%;
@@ -46,6 +58,16 @@ body{
 .image{
     width: 150px;
     height: 150px;
+}
+.temp{
+    font-size: 70px;
+    color: #FFD93D;
+}
+.humidity{
+    color: #05BFDB;
+}
+.wind_speed{
+    color: #05BFDB;
 }
 
   @media only screen and (max-width: 800px) {

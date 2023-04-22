@@ -21,10 +21,11 @@ fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${cityName}&days=1`
 	.then(response => response.json())
 	.then(response =>{
 		console.log(response)
-			document.querySelector('.city').innerHTML=cityName;
+			document.querySelector('.city').innerHTML=response.location.name;
+			document.querySelector(".region").innerHTML=response.location.region
 			document.querySelector('.temp').innerHTML=response.current.temp_c+"°C ";
 			document.querySelector('.humidity').innerHTML=response.current.humidity;
-			document.querySelector('.wind_speed').innerHTML=response.current.wind_kph;
+			document.querySelector('.wind_speed').innerHTML=response.current.wind_kph+" km/h";
 			image.src= response.current.condition.icon
 		} )
 		.catch(err => console.error(err));	
